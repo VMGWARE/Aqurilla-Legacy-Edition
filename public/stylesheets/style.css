@@ -1,0 +1,221 @@
+/* General Styles */
+@import url('https://fonts.cdnfonts.com/css/roobert');
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: 'Roobert', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.scrollable-feed {
+  max-height: 600px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #666666 #111111;
+}
+
+.scrollable-feed::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-feed::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+.scrollable-feed::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 4px;
+}
+
+.card {
+  margin-bottom: 20px;
+  background-color: #222222;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.comment {
+  background-color: #222222;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+/* Card Styles */
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #999999;
+}
+
+/* Comment Styles */
+
+.comment p.card-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.comment small.text-muted {
+  font-size: 12px;
+  color: #999999;
+}
+
+/* Form Styles */
+
+.comment-form textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Button Styles */
+
+.btn-primary {
+  background-color: #8a2be2;
+  border-color: #8a2be2;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-secondary {
+  background-color: #8a2be2;
+  border-color: #8a2be2;
+  border-radius: 15px;
+  margin: 5px 10px 10px 10px;
+  transform: translateY(5px);
+  padding: 3px 8px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.btn-secondary:hover {
+  background-color: #6a00b4;
+  border-color: #6a00b4;
+}
+
+.btn-primary:disabled {
+  background-color: #6a00b4;
+  border-color: #6a00b4;
+  transition: background-color 0.3s, border-color 0.3s;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary:hover {
+  background-color: #6a00b4;
+  border-color: #6a00b4;
+}
+
+/* Icon Styles */
+
+.navbar-brand i,
+.nav-link i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.post-profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.checkmark {
+  margin-bottom: 24px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.comment-profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dark-card {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-list {
+  background-color: #333;
+}
+
+.dark-item {
+  background-color: #222222;
+  color: #fff;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  margin-right: 10px;
+}
+
+.notification-message {
+  color: #fff;
+}
+
+.notification-time {
+  color: #bbb;
+}

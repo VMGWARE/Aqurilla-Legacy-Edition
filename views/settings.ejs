@@ -1,0 +1,54 @@
+<%- include('./layouts/main') %>
+
+<div class="container">
+  <h2>Settings</h2>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">General</h5>
+  <form action="/settings" method="POST">
+  <div class="form-group">
+    <label for="profilePicture">Profile Picture</label>
+    <input type="text" class="form-control dark-card" id="profilePicture" name="profilePicture" placeholder="Profile picture URL" value="<%= currentUser.profilePicture %>">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control dark-card" id="username" name="username" placeholder="Enter your username" value="<%= currentUser.username %>">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control dark-card" id="email" name="email" placeholder="Enter your email" value="<%= currentUser.email %>">
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+    </div>
+  </div>
+  
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">Privacy</h5>
+      <form>
+        <div class="form-group">
+          <label for="privacySetting">Privacy Setting</label>
+          <select class="form-control dark-card" id="privacySetting">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            <option value="friends">Friends Only</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="emailNotifications">
+          <label class="form-check-label" for="emailNotifications">Receive email notifications</label>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
